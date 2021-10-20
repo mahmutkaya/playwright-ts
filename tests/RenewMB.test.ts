@@ -14,8 +14,8 @@ test('dialog test', async ({page}) => {
         await cookiesAcceptBtn.click();
     }
 
-    const userName: string = '097023388494';
-    const password: string = 'dyrbkr21';
+    const userName: string = '123456789';
+    const password: string = '12345';
 
     await page.fill('[data-interaction-id=login-username]', userName);
     await page.fill('[data-interaction-id=login-password]', password);
@@ -32,5 +32,5 @@ test('dialog test', async ({page}) => {
         await page.click("//a[@href='/my/aanvullers?nav=dashboard']");
         await page.click("//button[@data-interaction-id='aanvullers_pricebundle']");
     }
-    // await browser.close();
+    await browser.close();
 });
